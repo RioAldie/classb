@@ -1,0 +1,68 @@
+
+{
+    "jadwal" :[ 
+        {
+        "mapel" : "Struktur Data",
+        "dosen" : "Patmi Kasih ,S.Kom,M.Kom",
+        "hari"  : "Jum'at",
+        "gambar" : "coding.png",
+        "index" : 1
+    },
+    {
+        "mapel" :"Praktikum Struktur Data",
+        "dosen" :"Patmi Kasih ,S.Kom,M.Kom ",
+        "hari" : "Kamis",
+        "gambar" :"coding.png",
+        "index": 2
+    },
+    {
+        "mapel" :"Basis Data II",
+        "dosen" :"Ratih Kumalasari Niswatin, S.ST,M.Kom",
+        "hari" : "Rabu",
+        "gambar" :"data-transfer.png",
+        "index": 3
+    },
+    {
+        "mapel" :"Praktikum Basis Data II",
+        "dosen" :"Ratih Kumalasari Niswatin, S.ST,M.Kom",
+        "hari" : "Kamis",
+        "gambar" :"data-transfer.png",
+        "index": 4
+    },
+    {
+        "mapel" :"Technopreneur",
+        "dosen" :"Julian Sahertian, S.Pd,M.T",
+        "hari" : "Selasa",
+        "gambar" :"error.png",
+        "index": 5
+    },
+    {
+        "mapel" :"Pemrograman Berorientasi Obyek",
+        "dosen" :"Intan Nur Farida, S.Kom,M.Kom",
+        "hari" : "Senin",
+        "gambar" :"programming.png",
+        "index": 6
+    },
+    {
+        "mapel" :"Praktikum Pemrograman Berorientasi Obyek",
+        "dosen" :"Intan Nur Farida, S.Kom,M.Kom ",
+        "hari" : "Selasa",
+        "gambar" :"programming.png",
+        "index": 7
+    },
+    {
+        "mapel" :"Riset Operasi",
+        "dosen" :"Niska Shofia, S.Si,M.Pd",
+        "hari" : "Senin",
+        "gambar" :"installation.png",
+        "index": 8
+    },
+    {
+        "mapel" :"Bahasa Indonesia Keilmuan",
+        "dosen" :"Dr. Subardi Agan, M.Pd",
+        "hari" : "Jum'at",
+        "gambar" :"open-book.png",
+        "index": 9
+    }
+ ]
+}

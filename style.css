@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --black: #333;
+    --black2: #333;
+    --white: #fff;
+    --white2: ##fff;
+    background: #777;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    background: #777;
+}
+.nav{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid #fff;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s;
+    color: #fff;
+    
+    
+}
+.nav.active{
+    width: 0;
+}
+.nav ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+}
+.nav ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    white-space: normal;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    color: #fff;
+}
+.nav ul li a:hover{
+    opacity: 1;
+}
+
+.menu-bar{
+    background: url(asset/bars-solid.svg);
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    float: right;
+    color: #fff;
+}
+.bar-menu{
+    color: #fff;
+   
+}
+.wa{
+    color: #333;
+}
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    background: var(--white);
+    min-height: 100vh;
+    transition: width 0.5s, left 0.5s;
+}
+.main.active{
+    width: calc(100% - 0px);
+    left: 0px;
+}
+.main .topbar{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 300px);
+    left: 300px;
+    background: var(--black);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: width 0.5s, left 0.5s;
+}
+.main .topbar.active{
+    width: calc(100% - 0px);
+    left: 0px;
+}
+.main .topbar .logo{
+    color: var(--black);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.main .topbar .toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.fb-bar{
+    background: url(asset/facebook-brands.svg);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+.twit-bar{
+    background: url(asset/twitter-brands.svg);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+.ig-bar{
+    background: url(asset/instagram-brands.svg);
+    display: flex;
+    width: 32px;
+    height: 34px;
+    background-size: cover;
+}
+.linkedin-bar{
+    background: url(asset/linkedin-in-brands.svg);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner .imgBx{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.banner .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h3{
+    position: relative;
+    font-size: 1.4em;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+p{
+    color: #777;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--black2);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.socialMedia{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.socialMedia li{
+    list-style: none;
+}
+.socialMedia li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.05);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2em;
+}
+.socialMedia li a:hover{
+    background: #333;
+    color: #fff;
+}
+.adjust{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 40px;
+    padding-top: 80px;
+    background: var(--white);
+    color: var(--black);
+    display: inline-block;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.title h2{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.title h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50px;
+    height: 1px;
+    background: var(--black);
+}
+
+.about .content{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.about .content .textBox{
+    width: 49%;
+    min-width: 49%;
+    text-align: center;
+} 
+.about .content .imgBx{
+    margin-left: 40px;
+}
+.about .content .imgBx img{
+    max-width: 100%;
+}
+.jadwal .content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 40px 0px;
+    
+}
+.jadwal .content .jadwalBox{
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 50px 20px;
+    display: flex;
+    background: var(--white2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jadwal .content .jadwalBox:hover img{
+    transform: translateY(-160%);
+    
+}
+.jadwal .content .jadwalBox img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+    transform: translateY(0);
+    
+}
+.jadwal .content .jadwalBox h2{
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.jadwal .content .jadwalBox p{
+    text-align: center;
+}
+.jadwal .content .jadwalBox .hari{
+    opacity: 0;
+    position: absolute;
+    transition: 1.0s ease-in-out;
+    transform: translateY(-760%);
+    overflow: hidden;
+}
+.jadwal .content .jadwalBox:hover .hari{
+    transition: 0/5s ease-in-out;
+    opacity: 1;
+    transform: translateY(-150%);
+}
+.foot{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: #333;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    color: #fff;
+}
+.upload{
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 50px 20px;
+    display: flex;
+    background: var(--white2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    height: 90vh;
+}
+.upload img{
+    height: 100px;
+}
+.upload .btn{
+    cursor: pointer;
+}
+
+@media (max-width:810px){
+    .nav{
+        z-index: 10000;
+        width: 100%;
+
+    }
+    .main .topbar .toggle{
+        margin-left: -30px;
+
+    }
+    .about .content .textBox{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    } 
+    .jadwal .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav ul{
+        text-align: center;
+        align-items: center;
+        padding: 30%;
+        margin-top: -200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav ul li{
+        text-align: center;
+    }
+    .nav ul li a{
+        text-align: center;
+        display: flex;
+    }
+}
